@@ -22,8 +22,7 @@ jobs:
           
       - name: Build HTML
         run: |
-          uv pip install -r requirements.txt
-          uv run sphinx-build -b html docs/source docs/build/html
+          uv run --with-requirements requirements.txt sphinx-build -b html docs/source docs/build/html
 
       - name: Upload & Deploy
         uses: actions/upload-pages-artifact@v3
