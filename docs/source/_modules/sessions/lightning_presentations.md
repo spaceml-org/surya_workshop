@@ -9,7 +9,7 @@
 
 ## 2. Video Snippets
 | Snippet | Topic | Timestamp | Notes |
-|-|-|-|-|
+|---|---|---|---|
 | 1 | [Topic] | [00:00–00:00] | [Key point] |
 | 2 | [Topic] | [00:00–00:00] | [Key point] |
 | 3 | [Topic] | [00:00–00:00] | [Key point] |

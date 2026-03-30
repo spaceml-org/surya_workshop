@@ -2,9 +2,14 @@
 
 The following sessions are covered:
 
-Dataloaders deep dive
-Baselines
-Finetuning architecture
-Finetuning
-Validation
-Lightning presentations
+## [Dataloaders deep dive](./sessions/dataloaders.md)
+
+## [Baselines](./sessions/baselines.md)
+
+## [Finetuning architecture](./sessions/finetuning_architecture.md)
+
+## [Finetuning](./sessions/finetuning.md)
+
+## [Validation](./sessions/validation.md)
+
+## [Lightning presentations](./sessions/lightning_presentations.md)

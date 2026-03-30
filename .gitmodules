@@ -1,0 +1,3 @@
+[submodule "surya_workshop"]
+	path = surya_workshop
+	url = https://github.com/SwRI-IDEA-Lab/surya_workshop.git

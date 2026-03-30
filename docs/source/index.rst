@@ -2,12 +2,11 @@
    sphinx-quickstart.
 
 .. image:: _static/surya_banner.png
-   :height: 200px
-   :target: https://github.com/SwRI-IDEA-Lab/surya_workshop
+   :width: 100%
+   :target: https://github.com/spaceml-org/surya_workshop
 
 ..
 
-|
 
 ================================
 Surya Science: Hands-on Workshop
@@ -19,13 +18,13 @@ Welcome to the documentation for the **Surya Science: Hands-on Workshop**. This 
 ..    :parser: myst_parser.sphinx_
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Workshop Content:
    :glob:
    
    _intro/index
    _setup/index
-   _modules/*
+   _modules/index
    _notebooks/ADAPTING
 
 .. toctree::
@@ -37,6 +36,6 @@ Welcome to the documentation for the **Surya Science: Hands-on Workshop**. This 
    license
    GitHub Repository <https://github.com/SwRI-IDEA-Lab/surya_workshop>
 
-|
+This documentation was generated using Sphinx, and is hosted on HelioFM.org. For acccess to the workshop repository, visit https://github.com/SwRI-IDEA-Lab/surya_workshop
 
 :ref:`search`

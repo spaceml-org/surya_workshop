@@ -1,0 +1,34 @@
+name: Deploy Sphinx to Pages
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-slim
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          
+      - name: Build HTML
+        run: |
+          uv pip install -r docs/requirements.txt
+          uv run sphinx-build -b html docs/source docs/build/html
+
+      - name: Upload & Deploy
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/build/html
+          
+      - id: deployment
+        uses: actions/deploy-pages@v4
