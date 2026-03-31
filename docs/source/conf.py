@@ -50,3 +50,5 @@ source_suffix = {
     '.myst': 'myst-nb',
     '.md': 'myst-nb',
 }
+
+nb_execution_mode = "off"

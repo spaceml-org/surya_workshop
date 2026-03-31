@@ -4,6 +4,13 @@ A template repository for fine-tuning [Surya](https://github.com/NASA-IMPACT/Sur
 
 ---
 
+````{margin}
+```{note}
+Add additional information here about using the documentation.
+```
+````
+
+
 ## The Surya Foundation Model
 
 **Surya** is a 366-million-parameter spatiotemporal transformer pre-trained on full-resolution data from NASA's [Solar Dynamics Observatory (SDO)](https://sdo.gsfc.nasa.gov/). It was developed as a NASA-IMPACT / IBM AI4Science collaboration and is described in:
@@ -189,7 +196,7 @@ On EC2 in the same AWS region as the bucket, expect 500–1000+ MB/s. Over a reg
 
 ### 5. Adapt the template for your own task
 
-Refer to [notebooks](../_notebooks/ADAPTING.md) for a step-by-step guide. The short version:
+Refer to [notebooks](notebooks) for a step-by-step guide. The short version:
 
 1. `cp -r downstream_apps/template downstream_apps/your_task`
 2. Edit `datasets/template_dataset.py` to load your labels alongside the SDO image stack.
@@ -199,9 +206,8 @@ Refer to [notebooks](../_notebooks/ADAPTING.md) for a step-by-step guide. The sh
 
 You typically do not need to touch `workshop_infrastructure/` at all.
 
-<!-- --- -->
 
-<!-- ## Key Design Decisions
+## Key Design Decisions
 
 **YAML as single source of truth.** All parameters are declared once in `config_script.yaml` and nowhere else. The CLI exposes only four arguments: `--config` (required), `--no-wandb` (dev toggle), `--train_baseline` (mode switch), and `--max-epochs` (sweep override). This keeps experiment management simple and reproducible.
 
@@ -209,4 +215,4 @@ You typically do not need to touch `workshop_infrastructure/` at all.
 
 **Notebooks and script are parallel, not redundant.** The notebooks are the learning path — they expose internals and make it easy to inspect intermediate results. The script is the production path — it adds DDP, robust checkpointing, and WandB integration. Both read the same YAML.
 
-**LoRA for efficient fine-tuning.** By default, PEFT LoRA adapters are added to all attention and feed-forward layers (rank 8, alpha 8, dropout 0.1). This allows the full Surya backbone to remain effectively frozen while adapting it to a new task with a small number of trainable parameters. LoRA can be disabled in the YAML if you prefer full fine-tuning or backbone freezing. -->
+**LoRA for efficient fine-tuning.** By default, PEFT LoRA adapters are added to all attention and feed-forward layers (rank 8, alpha 8, dropout 0.1). This allows the full Surya backbone to remain effectively frozen while adapting it to a new task with a small number of trainable parameters. LoRA can be disabled in the YAML if you prefer full fine-tuning or backbone freezing.
