@@ -22,6 +22,8 @@ jobs:
           
       - name: Build HTML
         run: |
+          uv tool install poetry
+          uv run poetry install
           uv run sphinx-build -b html docs/source docs/build/html
 
       - name: Upload & Deploy
