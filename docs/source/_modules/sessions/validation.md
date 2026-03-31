@@ -1,6 +1,6 @@
 # Validation
 
-<div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1154591307?h=bc99a95371&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Day 3: Lecture: Validation"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1176268895?h=447c33c790&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Day 3: Validation day"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 
 ## Lecture Aim
@@ -10,20 +10,14 @@ The primary objective of this session is to shift the mindset of practitioners f
 This lecture addresses the philosophical and practical requirements for successful machine learning in Heliophysics. It covers the inherent noise in data, the risks of human-induced overfitting, and the structural methods used to ensure model generalizability. Participants are guided through the logistics of distributed GPU training and the importance of benchmarking performance against simple models.
 
 ## Content Coverage
-
 ### Included Topics
 - The stochastic nature of machine learning and its resemblance to real-world noise
 - Philosophical distinctions between the problem one can solve versus the problem one wants to solve
 - Standard protocols for data splitting into training, validation, and test sets
 - The utility of ensembles in identifying model confusion and improving researcher discipline
-- Technical setup for overnight training runs using Python scripts
+- Technical setup for overnight training runs using Python scripts (specific to the workshop)
 - Performance optimization through increased worker counts and direct bucket connections
-- Specific strategies for handling hemispheric asymmetry and solar cycle dependency in dat### a
-
-### Topics Not Included
-- Detailed architectural breakdowns of the Surya model layers
-- Specific physics lectures on the underlying causes of solar flares or filaments
-- Step-by-step instructions for basic Python syntax or initial environment setup
+- Specific strategies for handling hemispheric asymmetry and solar cycle dependency in data
 
 ### Key Concepts
 
@@ -41,33 +35,33 @@ Strict adherence to protocols separates useful applications from curiosities. Th
 
 *Data Splitting Strategy*
 
-For Heliophysics, a yearly split based on months is recommended. This ensures solar activity is represented without leaking information between training and validation sets.
+For heliophysics, a yearly split with a buffer based on months is recommended. This ensures solar activity is represented without leaking information between training and validation sets.
 
 *Ensembles*
 
-Training multiple models or members allows researchers to move away from chasing single-digit improvements in one model. Agreement or disagreement within an ensemble provides informative metadata about model confidence.
+Training multiple models or members allows researchers to move away from chasing single-digit improvements in one model. Agreement or disagreement within an ensemble provides informative data about model confidence.
 
 *Baselines and the Spherical Cat*
 
-A baseline, such as a simple logistic regression, is mandatory for scientific publications. It serves as the simplest reference point to justify the complexity of a fine-tuned transformer model.
+A baseline, such as a simple logistic regression, is mandatory for scientific rigor. It serves as the simplest reference point to justify the complexity of a fine-tuned transformer model.
 
 ## Tutorial and Script References
 
 *Python Training Script*
 
-The lecture marks the transition from interactive notebooks to the Python script titled template tune specformer. This script is designed for overnight execution and handles both baseline training and Surya fine-tuning.
+The lecture marks the transition from interactive notebooks to Python scripts, which can be designed for overnight execution and handles both baseline training and Surya fine-tuning.
 
 *Git Workflow*
 
-Participants must use the git merge origin main command to update their branches with the latest training scripts and configuration patches.
+A reminder to run the `git merge origin main` command to update their branches with the latest training scripts and configuration patches.
 
 *Performance Tuning*
 
-To optimize training speed, the num workers parameter in the data loader should be increased to 28 or 30. This reduces bottlenecks when fetching batches from the AWS storage buckets.
+To optimize training speed, the num workers parameter in the data loader should be increased to 28 or 30. This reduces bottlenecks when fetching batches from the AWS storage buckets (specific to the workshop).
 
 *GPU Assignments*
 
-The environment utilizes a multi-GPU setup where participants are assigned specific devices and IP addresses to avoid memory clashes during group stress tests.
+The environment utilizes a multi-GPU setup where participants are assigned specific devices and IP addresses to avoid memory clashes during group stress tests (specific to the workshop).
 
 ## Training Objectives
 
@@ -76,6 +70,8 @@ The environment utilizes a multi-GPU setup where participants are assigned speci
 3. Utilize ensemble members to develop a stochastic statement about downstream application performance
 
 ## Slides and Resources
+
+### Validation
 
 <embed src="https://spaceml-org.github.io/surya_workshop/_static/slides/2026_AMJ_Surya_Workshop_5_Validation.pdf" width='100%' height='600px' type='application/pdf'>
     <p>If this browser does not support PDFs, please download <a href="https://spaceml-org.github.io/surya_workshop/_static/slides/2026_AMJ_Surya_Workshop_5_Validation.pdf">download the PDF</a> to view it.</p>

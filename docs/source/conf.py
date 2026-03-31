@@ -14,9 +14,9 @@ author = 'Andrés Muñoz-Jaramillo, Russell Spiewak, Mike Heyns'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    "myst_parser",             # Allows you to use Markdown (.md) files
     "sphinx.ext.githubpages",  # Creates the .nojekyll file for GH Pages
-    "sphinx_book_theme",
+    "sphinx_book_theme",       # Provides the Sphinx Book Theme for a modern documentation look
+    "myst_nb",                # Integrates Jupyter Notebooks into Sphinx
 ]
 
 exclude_patterns = []
@@ -46,5 +46,7 @@ html_static_path = ['_static']
 # Add support for both .rst and .md files
 source_suffix = {
     '.rst': 'restructuredtext',
-    '.md': 'markdown',
+    '.ipynb': 'myst-nb',
+    '.myst': 'myst-nb',
+    '.md': 'myst-nb',
 }
