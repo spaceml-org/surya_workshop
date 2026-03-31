@@ -57,7 +57,6 @@ pure-eval==0.2.3
 pydata-sphinx-theme==0.16.1
 pygments==2.19.2
 python-dateutil==2.9.0.post0
-pywin32==311
 pyyaml==6.0.3
 pyzmq==27.1.0
 referencing==0.37.0
