@@ -37,7 +37,7 @@ For ease of use, a requirements file is included to set up the necessary environ
 To install the required dependencies, run:
 
 ```bash
-pip install -r requirements.txt
+poetry install 
 ```
 
 Then build the documentation with:
