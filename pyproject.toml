@@ -54,6 +54,7 @@ sphinxcontrib-qthelp = ">=2.0.0"
 sphinxcontrib-serializinghtml = ">=2.0.0"
 typing-extensions = ">=4.15.0"
 urllib3 = ">=2.6.3"
+myst-nb = "^1.4.0"
 
 
 [build-system]
