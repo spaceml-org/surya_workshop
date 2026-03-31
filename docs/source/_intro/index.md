@@ -108,3 +108,17 @@ The session also highlights the technical modularity of the architecture—inclu
 <div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1175209220?h=dbd23d868e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Day 1: HelioAI - what’s next? with Shing"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 *What to expect:* Exploration of the critical role of the SPASE (Space Physics Archive Search and Extract) metadata model, which has spent three decades standardizing how space science data is documented to ensure long-term reusability. The talk shares how this mature framework, already the de facto standard for NASA, ESA, and JAXA, is being extended to specifically describe AI/ML resources like the Surya model.
+
+## Panel Sessions
+
+### Industry perspectives: Dan Crichton (JPL) & Massy Mascaro (Google)
+
+<div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1154265039?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Day 2: Panel session on Industry perspectives"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+### Agency perspectives: Lika Guhathakurta (NASA), Rahul Ramachandran (NASA-IMPACT), Robert Redmon (Director of NOAA Center for AI), Therese Moretto Jorgensen (NASA)
+
+<div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1154595118?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Day 3: Panel Session: Agency Perspectives"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+### Science perspectives: Raul Ramos Pollan, David Fouhey (NYU), Tzu-Wei Fang (NOAA)
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1155011240?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Day 4: Panel session: Science perspectives"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
