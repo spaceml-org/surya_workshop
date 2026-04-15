@@ -22,7 +22,15 @@ jobs:
         with:
           python-version: '3.12.12'
 
+      - name: Load cached Poetry installation
+        id: cached-poetry
+        uses: actions/cache@v4
+        with:
+          path: ~/.local  
+          key: poetry-0  
+
       - name: Install Poetry
+        if: steps.cached-poetry.outputs.cache-hit != 'true'
         uses: snok/install-poetry@v1
         with:
           version: 2.3.3
@@ -41,12 +49,9 @@ jobs:
       - name: Install dependencies
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
         run: poetry install --no-interaction --no-root
-
-      - name: Install project
-        run: poetry install --no-interaction
           
       - name: Build HTML
-        run: sphinx-build -b html docs/source docs/build/html
+        run: poetry run sphinx-build -b html docs/source docs/build/html
 
       - name: Upload & Deploy
         uses: actions/upload-pages-artifact@v3
